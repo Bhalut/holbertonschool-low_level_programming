@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/*
- *Description:  main funtion display
- *"Programming is like building a multilingual puzzle.
+/**
+ *main - funtion display "Programming is like building a multilingual puzzle.
+ *Return: 0
  */
 
 int main(void)
