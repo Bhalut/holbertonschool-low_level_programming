@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - display the alphabet in lowercase, all the letters except q and e
+ *main - display all the numbers of base 16 in lowercase
  *Return: 0
  */
 
