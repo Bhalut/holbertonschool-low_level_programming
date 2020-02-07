@@ -14,7 +14,7 @@ int main(void)
 
 	for (x = 0; x <= 9; x++)
 	{
-		for (y = 0; y <= 8; y++)
+		for (y = 0; y <= 9; y++)
 		{
 			o = y + 1;
 			z = x;
@@ -29,6 +29,7 @@ int main(void)
 
 					putchar(z + '0');
 					putchar(o + '0');
+
 					if (!(x == 9 && y == 8
 					      && z == 9 && o == 9))
 					{
