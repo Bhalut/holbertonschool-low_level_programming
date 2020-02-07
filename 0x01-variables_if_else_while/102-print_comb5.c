@@ -16,14 +16,17 @@ int main(void)
 	{
 		for (y = 0; y <= 8; y++)
 		{
-			for (z = 0; z <= 9; z++)
+			o += 1;
+			z = x;
+			for (; z <= 9; z++)
 			{
-				o = 1;
 				for (; o <= 9; o++)
 				{
 					putchar(x + '0');
 					putchar(y + '0');
+
 					putchar(' ');
+
 					putchar(z + '0');
 					putchar(o + '0');
 					if (!(x == 9 && y == 8
@@ -33,12 +36,9 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				o = z + 1;
+				o = 0;
 			}
-			z = y + 1;
 		}
-		y = x + 1;
-
 	}
 
 	putchar('\n');
