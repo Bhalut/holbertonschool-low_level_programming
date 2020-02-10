@@ -8,12 +8,14 @@
 int main(void)
 {
 	int i;
-	char name[10] = "Holberton";
+	char name[9] = "Holberton";
 
-	for (i = 0; i <= 10; i++)
+	for (i = 0; i <= 9; i++)
 	{
 		_putchar(name[i]);
 	}
+
+	_putchar('\n');
 
 	return (0);
 }
