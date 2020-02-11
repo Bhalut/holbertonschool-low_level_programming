@@ -1,9 +1,8 @@
 #include "holberton.h"
 
 /**
- *
- *
- *
+ *jack_bauer - display 24hours
+ *Return: void
  */
 void jack_bauer(void)
 {
