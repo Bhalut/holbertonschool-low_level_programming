@@ -2,7 +2,7 @@
 
 /**
  *print_sign - display + positive, - negative, 0 zero
- *@c: parameter character or code ascii
+ *@n: parameter character or code ascii
  *Return: + - or 0
  */
 int print_sign(int n)
