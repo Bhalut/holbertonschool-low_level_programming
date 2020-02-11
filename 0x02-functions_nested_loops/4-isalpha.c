@@ -1,5 +1,10 @@
 #include "holberton.h"
 
+/**
+ *_isalpha - display 1 to lower/upper case, 0 otherwise
+ *@c: parameter character or ascii code
+ *Return: 0 or 1
+ */
 int _isalpha(int c)
 {
 	int result;
