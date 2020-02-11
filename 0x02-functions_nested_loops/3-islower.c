@@ -13,13 +13,10 @@ int _islower(int c)
 	{
 		result = 0;
 	}
-	else if (c >= 97 && c <= 122)
+
+	if (c >= 97 && c <= 122)
 	{
 		result = 1;
-	}
-	else
-	{
-		result = 404;
 	}
 
 	return (result);
