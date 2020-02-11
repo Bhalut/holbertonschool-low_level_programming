@@ -1,7 +1,7 @@
 /**
- *
- *
- *
+ *_abs - display absolute number
+ *@n: parameter integer
+ *Return: absolute number
  */
 int _abs(int n)
 {
