@@ -10,33 +10,14 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		for (t = 1; t <= 33; t++)
-		{
-			if (i == (3 * t) && i == (5 * t))
-			{
-				f = 1;
-				break;
-			}
-			else if (i == (5 * t))
-			{
-				f = 2;
-				break;
-			}
-			else if (i == (3 * t))
-			{
-				f = 3;
-				break;
-			}
-			else
-			{
-				f = 4;
-			}
-		}
-		if (f == 1)
+		t = i % 3;
+		f = i % 5;
+
+		if (t == 0 && f == 0)
 			printf("FizzBuzz");
-		else if (f == 2)
+		else if (f == 0)
 			printf("Buzz");
-		else if (f == 3)
+		else if (t == 0)
 			printf("Fizz");
 		else
 			printf("%d", i);
