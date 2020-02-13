@@ -6,9 +6,8 @@
  */
 void more_numbers(void)
 {
-	int i;
+	int i, u, o;
 	int tmp;
-	int u;
 
 	for (u = 0; u <= 9; u++)
 	{
@@ -16,10 +15,11 @@ void more_numbers(void)
 		{
 			if (i > 9)
 			{
-				tmp = i / 10;
-				_putchar(tmp + '0');
-				tmp = i % 10;
-				_putchar(tmp + '0');
+				for (o = 0; o < 2; o++)
+				{
+					tmp = (o == 0) ? i / 10 : i % 10;
+					_putchar(tmp + '0');
+				}
 			}
 			else
 			{
