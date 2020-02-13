@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /**
- *main - print from 0 to 100, not multiple 3 and 5
+ *main - print from 1 to 100, not multiple 3 and 5
  *Return: 0 success
  */
 int main(void)
 {
 	int i, t, f;
 
-	for (i = 0; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		for (t = 1; t <= 33; t++)
 		{
