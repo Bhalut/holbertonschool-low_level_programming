@@ -30,18 +30,19 @@ int main(void)
 			else
 			{
 				f = 4;
-				continue;
 			}
 		}
-
 		if (f == 1)
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		else if (f == 2)
-			printf("Buzz ");
+			printf("Buzz");
 		else if (f == 3)
-			printf("Fizz ");
+			printf("Fizz");
 		else
-			printf("%d ", i);
+			printf("%d", i);
+
+		if (i != 100)
+			putchar(' ');
 	}
 	printf("\n");
 	return (0);
