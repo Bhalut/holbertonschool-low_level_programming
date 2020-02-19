@@ -1,7 +1,8 @@
 /**
- *
- *
- *
+ *_strcpy - Write a function that copies the string pointed to by src
+ *@dest: pointer char void
+ *@src: pointer char source
+ *Return: dest data
  */
 char *_strcpy(char *dest, char *src)
 {
