@@ -7,10 +7,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, j = 0, k = 0;
-
-	while (dest[j])
-		j++;
+	int i, k = 0;
 
 	while (src[k])
 		k++;
@@ -24,9 +21,9 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	else
 	{
-		for (i = 0; i <= n; i++)
+		for (i = 0; i < n; i++)
 		{
-			if (i <= k)
+			if (i < k)
 				dest[i] = src[i];
 			else
 				dest[i] = '\0';
