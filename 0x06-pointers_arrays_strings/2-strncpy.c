@@ -1,0 +1,34 @@
+/**
+ *_strncpy - copies a string.
+ *@dest: pointer parameter destination
+ *@src: pointer parameter source
+ *@n: integer parameter number
+ *Return: dest variable
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+	int i, j = 0, k = 0;
+
+	while (dest[j])
+		j++;
+
+	while (src[k])
+		k++;
+
+	if (n < k)
+	{
+		for (i = 0; i <= n; i++)
+		{
+			dest[i] = src[i];
+		}
+	}
+	else
+	{
+		for (i = 0; i <= k; i++)
+		{
+			dest[i] = src[i];
+		}
+	}
+
+	return (dest);
+}
