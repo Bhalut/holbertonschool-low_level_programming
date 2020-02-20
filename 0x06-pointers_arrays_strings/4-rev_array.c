@@ -6,8 +6,9 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i = n - 1, j = 0, x;
+	int i = n, j = 0, x;
 
+	i -= 1;
 	while (j < a[i])
 	{
 		x = a[i];
