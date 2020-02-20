@@ -26,7 +26,7 @@ int _strcmp(char *s1, char *s2)
 	else
 	{
 		n = i - j;
-		n = (n * 10) + i - 1;
+		n = (n * 10) + j;
 	}
 
 	return (n);
