@@ -1,8 +1,7 @@
 /**
- *
- *
- *
- *
+ *cap_string - capitalizes all words of a string.
+ *@s: pointer parameter character
+ *Return: s variable
  */
 char *cap_string(char *s)
 {
