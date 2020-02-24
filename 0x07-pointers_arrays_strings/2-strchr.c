@@ -8,7 +8,7 @@ char *_strchr(char *s, char c)
 {
 	int i, n;
 
-	n = sizeof(*s) / sizeof(s[0]);
+	n = sizeof(s) / sizeof(s[0]);
 
 	for (i = 0; i <= n; i++)
 	{
