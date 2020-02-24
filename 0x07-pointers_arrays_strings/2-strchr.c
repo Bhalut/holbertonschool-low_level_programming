@@ -1,5 +1,5 @@
 /**
- *_strchar - locates a character in a string.
+ *_strchr - locates a character in a string.
  *@s: pointer parameter char
  *@c: parameter character
  *Return: s variable
@@ -13,7 +13,7 @@ char *_strchr(char *s, char c)
 		if (s[i] == c)
 		{
 			s = &s[i];
-		        return (s);
+			return (s);
 		}
 	}
 
