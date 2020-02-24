@@ -6,16 +6,21 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i;
+	int i, n;
 
-	for (i = 0; s[i]; i++)
+	n = sizeof(*s) / sizeof(s[0]);
+
+	for (i = 0; i <= n; i++)
 	{
 		if (s[i] == c)
 		{
 			s = &s[i];
-			return (s);
+			break;
 		}
+
+		if (s[i] == '\0')
+			s = '\0';
 	}
 
-	return ('\0');
+	return (s);
 }
