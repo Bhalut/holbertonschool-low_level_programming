@@ -8,7 +8,8 @@ char *_strchr(char *s, char c)
 {
 	int i, n;
 
-	n = sizeof(s) / sizeof(s[0]);
+	while (s[n])
+		n++;
 
 	for (i = 0; i <= n; i++)
 	{
@@ -19,7 +20,7 @@ char *_strchr(char *s, char c)
 		}
 
 		if (s[i] == '\0')
-			return ('\0');
+			s = '\0';
 	}
 
 	return (s);
