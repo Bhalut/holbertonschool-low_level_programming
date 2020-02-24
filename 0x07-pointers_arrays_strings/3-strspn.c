@@ -6,23 +6,26 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j, x = 0;
+	int i, j, n = 0, x = 0;
 	unsigned int count = 0;
 
-	while (accept[x])
+	while (s[x])
 		x++;
 
-	for (i = 0; s[i]; i++)
+	while (accept[n])
+		n++;
+
+	for (i = 0; i <= x; i++)
 	{
-		for (j = 0; i <= x; j++)
+		for (j = 0; j <= n; j++)
 		{
 			if (accept[j] == s[i])
 			{
 				count++;
 				break;
 			}
-			if (accept[j] == '\0')
-				i = n;
+			if (!accept[j])
+				i = x;
 		}
 	}
 
