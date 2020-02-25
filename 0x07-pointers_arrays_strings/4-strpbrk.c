@@ -6,14 +6,17 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j, n = 0;
+	int i, j, n = 0, x = 0;
 
 	while (s[n])
 		n++;
 
+	while (accept[x])
+		x++;
+
 	for (i = 0; i <= n; i++)
 	{
-		for (j = 0; accept[j]; j++)
+		for (j = 0; j <= x; j++)
 		{
 			if (s[i] == accept[j])
 			{
@@ -21,7 +24,7 @@ char *_strpbrk(char *s, char *accept)
 				i = n;
 				break;
 			}
-			else if (s[i] == '\0')
+			if (s[i] == '\0' && accept[j] == '\0')
 				s = '\0';
 		}
 	}
