@@ -1,8 +1,8 @@
 /**
- *
- *
- *
- *
+ *_strstr - locates a substring.
+ *@haystack: pointer parameter
+ *@needle: pointer parameter
+ *Return: haystack variable
  */
 char *_strstr(char *haystack, char *needle)
 {
