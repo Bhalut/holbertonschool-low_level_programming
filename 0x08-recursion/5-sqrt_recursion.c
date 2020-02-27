@@ -1,3 +1,9 @@
+/**
+ *cmp - comparation multiplication
+ *@x: value to compare
+ *@y: value compare
+ *Return: result
+ */
 int cmp(int x, int y)
 {
 	if ((x * x) == y)
@@ -9,11 +15,9 @@ int cmp(int x, int y)
 }
 
 /**
- *
- *
- *
- *
- *
+ *_sqrt_recursion - returns the natural square root of a number.
+ *@n: number for square root
+ *Return: result
  */
 int _sqrt_recursion(int n)
 {
