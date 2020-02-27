@@ -8,7 +8,7 @@ int cmp(int x, int y)
 {
 	if (x % y == 0)
 		return (1);
-	else (x % y > 0)
+	else if (x % y > 0)
 		return (0);
 	else
 		return (cmp(x, y + 1));
