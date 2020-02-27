@@ -1,9 +1,7 @@
 /**
- *
- *
- *
- *
- *
+ *factorial -  returns the factorial of a given number.
+ *@n: number parameter
+ *Return: factorial
  */
 int factorial(int n)
 {
