@@ -16,9 +16,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			if (*argv[i] >= '0' && *argv[i] <= '9')
-			{
 				add += atoi(argv[i]);
-			}
 			else
 			{
 				printf("Error\n");
@@ -28,7 +26,7 @@ int main(int argc, char *argv[])
 		printf("%d\n", add);
 	}
 	else
-		printf("0\n");
+		printf("%d\n", 0);
 
 	return (0);
 }
