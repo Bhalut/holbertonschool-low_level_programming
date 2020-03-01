@@ -9,13 +9,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, add = 0;
+	int i, add = 0, j;
 
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (*argv[i] >= '0' && *argv[i] <= '9')
+			j = atoi(argv[i]);
+
+			if (j)
 				add += atoi(argv[i]);
 			else
 			{
