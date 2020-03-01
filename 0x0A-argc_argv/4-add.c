@@ -22,13 +22,12 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (isdigit(*argv[i]))
-				add += atoi(argv[i]);
-			else
+			if (!isdigit(*argv[i]))
 			{
 				printf("Error\n");
 				return (1);
 			}
+			add += atoi(argv[i]);
 		}
 		printf("%d\n", add);
 	}
