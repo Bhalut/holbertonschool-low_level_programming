@@ -24,8 +24,12 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
+		printf("%i\n", add);
 	}
-	printf("%d\n", add);
+	else if (argc == 1)
+	{
+		printf("0\n");
+	}
 
 	return (0);
 }
