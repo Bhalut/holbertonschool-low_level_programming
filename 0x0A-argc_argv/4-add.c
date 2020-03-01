@@ -12,6 +12,12 @@ int main(int argc, char *argv[])
 {
 	int i, add = 0;
 
+	if (argc == 1)
+	{
+		printf("0\n");
+		return (0);
+	}
+
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
@@ -25,10 +31,6 @@ int main(int argc, char *argv[])
 			}
 		}
 		printf("%i\n", add);
-	}
-	else if (argc == 1)
-	{
-		printf("0\n");
 	}
 
 	return (0);
