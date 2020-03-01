@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			j = atoi(argv[i]);
-			if (j)
+			if (j > 0)
 				add += atoi(argv[i]);
 			else
 			{
