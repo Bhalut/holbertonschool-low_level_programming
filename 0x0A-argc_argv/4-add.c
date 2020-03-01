@@ -9,13 +9,14 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, add = 0;
+	int i, add = 0, j = 0;
 
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (isdigit(argv[i]))
+			j = atoi(argv[i]);
+			if (j)
 				add += atoi(argv[i]);
 			else
 			{
