@@ -23,10 +23,8 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		printf("%d\n", add);
 	}
-	else
-		printf("%d\n", 0);
+	printf("%d\n", add);
 
 	return (0);
 }
