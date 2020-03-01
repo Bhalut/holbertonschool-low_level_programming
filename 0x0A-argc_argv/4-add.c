@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j, add;
+	int i, add = 0;
 
 	if (argc > 1)
 	{
@@ -17,8 +17,7 @@ int main(int argc, char *argv[])
 		{
 			if (*argv[i] >= '0' && *argv[i] <= '9')
 			{
-				j = atoi(argv[i]);
-				add += j;
+				add += atoi(argv[i]);
 			}
 			else
 			{
@@ -29,9 +28,7 @@ int main(int argc, char *argv[])
 		printf("%d\n", add);
 	}
 	else
-	{
 		printf("0\n");
-	}
 
 	return (0);
 }
