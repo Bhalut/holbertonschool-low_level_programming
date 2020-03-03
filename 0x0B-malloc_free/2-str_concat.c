@@ -1,10 +1,10 @@
 #include <stdlib.h>
 
 /**
- *_strdup -  returns a pointer to a newly allocated space in memory,
- *which contains a copy of the string given as a parameter.
- *@str: pointer charecter (string)
- *Return: pointer value - duplicate str parameter
+ *_strdup - concatenates two strings.
+ *@s1: pointer charecter (string)
+ *@s2: pointer charecter (string)
+ *Return: pointer value - concatenates string parameters
  */
 char *str_concat(char *s1, char *s2)
 {
