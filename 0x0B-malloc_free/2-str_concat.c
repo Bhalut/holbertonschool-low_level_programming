@@ -23,10 +23,8 @@ char *str_concat(char *s1, char *s2)
 	while (s2[len])
 		len++;
 
-	if (len + len1)
-	{
 		ptr = malloc(sizeof(char) * (len + len1) + 1);
-		if (!(ptr == 0))
+		if (!(ptr == NULL))
 		{
 			for (i = 0; i < len1; i++)
 				ptr[i] = s1[i];
@@ -39,8 +37,5 @@ char *str_concat(char *s1, char *s2)
 			return (ptr);
 		}
 		else
-			return (0);
-	}
-	else
-		return (0);
+			return (NULL);
 }
