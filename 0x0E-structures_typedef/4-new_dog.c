@@ -2,32 +2,33 @@
 #include "dog.h"
 
 /**
- *_strdup -  returns a pointer to a newly allocated space in memory,
- *which contains a copy of the string given as a parameter.
- *@str: pointer charecter (string)
- *Return: pointer value - duplicate str parameter
+ * _strdup - Returns a pointer to a newly allocated space in memory
+ * @str: Holds the string to be copied
+ * Return: a pointer to a char
  */
 char *_strdup(char *str)
 {
-	char *ptr;
-	int len = 0, i = 0;
+	char *strc;
+	int i;
 
-	if (str == NULL)
-		return (NULL);
-
-	while (str[len])
-		len++;
-
-	ptr = malloc((sizeof(char) * len) + 1);
-	if (!(ptr == NULL))
+	if (str == 0)
 	{
-		for (i = 0; i < len; i++)
-			ptr[i] = str[i];
-
-		return (ptr);
+		return (0);
 	}
-	else
-		return (NULL);
+	for (i = 0; str[i] != 0; i++)
+	{
+	}
+	strc = malloc((sizeof(char) * 1) + i);
+	if (strc == 0)
+	{
+		return (0);
+	}
+	for (i = 0; str[i] != 0; i++)
+	{
+		strc[i] = str[i];
+	}
+	strc[i] = 0;
+	return (strc);
 }
 
 /**
