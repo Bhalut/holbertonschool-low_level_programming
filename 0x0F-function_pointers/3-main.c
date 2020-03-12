@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 
 	if (get_op_func(operator) == NULL || argv[2][1] != '\0')
 	{
-		printf("ERROR\n");
+		printf("Error\n");
 		return (99);
 	}
 
