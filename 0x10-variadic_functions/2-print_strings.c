@@ -13,6 +13,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	char *ptr;
 
+	if (!n)
+		return;
+
 	va_start(valist, n);
 
 	if (n)
