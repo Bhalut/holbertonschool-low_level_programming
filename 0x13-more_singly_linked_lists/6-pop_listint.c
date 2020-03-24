@@ -2,10 +2,9 @@
 #include "lists.h"
 
 /**
- * add_nodeint - dds a new node at the beginning of a listint_t list.
+ * pop_listint - returns the sum of all the data (n) of a listint_t linked list
  * @head: linked lists
- * @n: number to linked
- * Return: new node
+ * Return: value
  */
 int pop_listint(listint_t **head)
 {
@@ -20,5 +19,5 @@ int pop_listint(listint_t **head)
 	free(*head);
 	(*head) = newNode;
 
-	return value;
+	return (value);
 }
