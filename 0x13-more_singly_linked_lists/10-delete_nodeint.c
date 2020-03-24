@@ -20,10 +20,10 @@ size_t _listint_len(const listint_t *h)
 }
 
 /**
- * get_nodeint_at_index - the number of elements in a linked listint_t list.
+ * delete_nodeint_at_index - deletes the node at index index of a listint_t.
  * @head: linked lists
  * @index: index to linked list
- * Return: node by index
+ * Return: 1 success or -1 failed
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
