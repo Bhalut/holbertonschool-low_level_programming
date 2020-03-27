@@ -7,12 +7,21 @@
  */
 void print_binary(unsigned long int n)
 {
-	if (n == 0)
-		_putchar('0');
+	unsigned long int size = sizeof(unsigned long int);
+	unsigned long int max = 1 << (size * 7);
+	int isNumber = 0;
 
-	while (n)
+	while (max)
 	{
-		_putchar((n & 1) + '0');
-		n >>= 1;
+		if (!!(n & max))
+			isNumber = 1;
+
+		if (isNumber)
+			_putchar(!!(n & max) + '0');
+
+		max >>= 1;
 	}
+
+	if (!(isNumber))
+		_putchar('0');
 }
