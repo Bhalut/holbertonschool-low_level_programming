@@ -13,11 +13,11 @@ void print_binary(unsigned long int n)
 
 	while (max)
 	{
-		if (!!(n&max))
+		if (!!(n & max))
 			isNumber = 1;
 
 		if (isNumber)
-			_putchar(!!(n&max) + '0');
+			_putchar(!!(n & max) + '0');
 
 		max >>= 1;
 	}
