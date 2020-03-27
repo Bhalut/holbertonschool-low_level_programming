@@ -11,6 +11,9 @@ void print_binary(unsigned long int n)
 	unsigned long int max = 1 << (size * 7);
 	int isNumber = 0;
 
+	if (n == 0)
+		_putchar('0');
+
 	while (max)
 	{
 		if (!!(n & max))
@@ -21,7 +24,4 @@ void print_binary(unsigned long int n)
 
 		max >>= 1;
 	}
-
-	if (!(isNumber))
-		_putchar('0');
 }
