@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * rev_put - prints the binary
+ * rev_bin - prints the binary
  * @n: number in decimal
  * Return: void
  */
