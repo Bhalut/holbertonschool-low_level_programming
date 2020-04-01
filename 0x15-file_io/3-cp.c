@@ -27,8 +27,8 @@ int main(int argc, char *argv[])
 
 	file_two = open(argv[2],  O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (file_two == -1)
-                dprintf(STDERR_FILENO, "Error: Can't write from file %s\n",
-                        argv[2]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n",
+			argv[2]), exit(99);
 
 	r = read(file_one, buffer, 1024);
 	if (r == -1)
@@ -41,9 +41,9 @@ int main(int argc, char *argv[])
 			argv[2]), exit(99);
 
 	c = close(file_one);
-        if (c == -1)
-                dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_one),
-                        exit(100);
+	if (c == -1)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_one),
+			exit(100);
 
 	c = close(file_two);
 	if (c == -1)
