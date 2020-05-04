@@ -9,6 +9,9 @@ void free_dlistint(dlistint_t *head)
 {
 	dlistint_len *current;
 
+	if (!head)
+		return;
+
 	while (head)
 	{
 		current = head;
@@ -16,4 +19,6 @@ void free_dlistint(dlistint_t *head)
 
 		free(current);
 	}
+
+	free(head);
 }
